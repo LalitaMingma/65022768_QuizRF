@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-01-29T10:33:53.600316" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc3" source="c:\Users\WINDOW XI\Desktop\QuizRF\tc3.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T10:33:54.007217" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com/login'.</msg>
+<arg>http://automationexercise.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:33:54.006215" elapsed="7.968307"/>
+</kw>
+<test id="s1-t1" name="Register with valid info" line="37">
+<kw name="Click Register Element">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:01.982336" level="INFO">Clicking element '//*[@id="form"]/div/div/div[1]/div'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:01.981328" elapsed="0.164037"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:34:01.979284" elapsed="0.167123"/>
+</kw>
+<kw name="Input Email address">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:02.146770" level="INFO">Typing text '12345@gmail.com' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[2]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[2]</arg>
+<arg>${Email Address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:02.146770" elapsed="1.099754"/>
+</kw>
+<arg>${Email Address}</arg>
+<status status="PASS" start="2024-01-29T10:34:02.146770" elapsed="1.099754"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:03.246524" level="INFO">Typing text '67890_54321' into text field '//*[@id="form"]/div/div/div[1]/div/form/input[3]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[3]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:03.246524" elapsed="0.348170"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2024-01-29T10:34:03.246524" elapsed="0.349172"/>
+</kw>
+<kw name="Checked Checkbox">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:03.600223" level="INFO">Clicking element '//*[@id="form"]/div/div/div[1]/div/form/input[2]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:03.599215" elapsed="0.162044"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:03.761259" level="INFO">Clicking element '//*[@id="form"]/div/div/div[1]/div/form/input[3]'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/input[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:03.761259" elapsed="0.190153"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:34:03.597705" elapsed="0.360781"/>
+</kw>
+<kw name="Click Register Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:03.962601" level="INFO">Clicking button '//*[@id="form"]/div/div/div[1]/div/form/button'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:34:03.961596" elapsed="1.398254"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:34:03.959589" elapsed="1.400261"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:34:08.376793" level="INFO">Current page contains element '//*[@id="form"]/div/div/div[1]/div/h2'.</msg>
+<arg>//*[@id="form"]/div/div/div[1]/div/h2</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:34:05.359850" elapsed="3.022660"/>
+</kw>
+<doc>Test the login functionality with valid credentials</doc>
+<status status="PASS" start="2024-01-29T10:34:01.974522" elapsed="6.413009"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" start="2024-01-29T10:33:53.600932" elapsed="14.797642"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc3">Tc3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
